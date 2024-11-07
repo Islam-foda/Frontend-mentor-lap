@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github-url](https://github.com/Islam-foda/Frontend-mentor-lap/tree/main/bento-grid-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github-URL](https://github.com/Islam-foda/Frontend-mentor-lap/tree/main/bento-grid-main)
+- Live Site URL: [Live Preview](https://islam-foda.github.io/Frontend-mentor-lap/bento-grid-main/index.html)
 
 ## My process
 
