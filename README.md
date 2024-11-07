@@ -1,2 +1,4 @@
 # Frontend-mentor-lap
-Templates I Done from Frontend Mentor
+Frontend Mentor projects 
+
+- First template (bento-grid): [bento-grid](./bento-grid-main/index.html)

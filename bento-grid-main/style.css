@@ -22,29 +22,27 @@ body {
   align-items: center;
 }
 
-h4 {
-  /* font-weight: 500; */
-}
+
 p {
   font-weight: 400;
   font-size: 12px;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 1.5em;
   transition: all 0.3s ease-in;
-  padding: 2em;
+  padding: 1.5em;
 }
 
 .box {
   /* font-size: 18px; */
   border-radius: 0.4em;
   position: relative;
-  padding: 1em;
+  padding: 0.9em;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -90,7 +88,11 @@ img {
   align-items: flex-end;
 }
 
-.two img{
+.two h3 {
+  line-height: 0.9;
+}
+
+.two img {
   width: 120%;
   position: absolute;
   top: 20px;
@@ -99,45 +101,87 @@ img {
 .three {
   grid-area: 3 / 3 / 5 / 4;
 }
+.three h3 {
+  letter-spacing: -1px;
+  line-height: 22px;
+  font-size: 24px;
+}
+.three img {
+  position: absolute;
+  bottom: -50px;
+  width: 80%;
+}
+
 .four {
+  position: initial;
   background-color: var(--Purple-100);
+  justify-content: space-around;
   grid-area: 1 / 4 / 5 / 5;
 }
+.four h3 {
+  letter-spacing: -1px;
+  line-height: 19px;
+  font-size: 22px;
+}
+
+.four .image {
+  position: relative;
+  width: 100%;
+  height: 140px;
+}
+.four img {
+  width: 146%;
+  position: absolute;
+  left: 27px;
+  top: -36px;
+}
+
 .five {
   grid-area: 5 / 3 / 7 / 5;
   flex-direction: row;
+  gap: 0.5em;
 }
-.five img{
-  
+.five h3 {
+  line-height: 30px;
+  font-size: 28px;
+}
+.five img {
+  width: 46%;
 }
 .six {
   grid-area: 5 / 2 / 7 / 3;
- align-items: flex-start;
- gap: 20px;
- line-height: .5;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  line-height: 0.5;
 }
-.six h4{
-  font-size: 28px;
+.six h4 {
+  font-size: 36px;
 }
-.six img{
-  margin: auto 0;
+.six img {
+  margin: 0;
   width: 80%;
 }
 .seven {
   background-color: var(--Yellow-100);
   grid-area: 1 / 1 / 4 / 2;
 }
+.seven img {
+  width: 90%;
+}
 .eight {
   grid-area: 4 / 1 / 7 / 2;
 }
-.eight,.seven,.two{
-    letter-spacing: -1px;
-    line-height: 19px;
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
+.eight,
+.seven,
+.two {
+  letter-spacing: -1px;
+  line-height: 19px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
-.seven img ,.eight img {
+.eight img {
   width: 110%;
 }
