@@ -22,36 +22,94 @@ body {
   align-items: center;
 }
 
-
 p {
+  font-size: 16px;
   font-weight: 400;
-  font-size: 12px;
 }
 
 .container {
-  max-width: 900px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
   gap: 1.5em;
   transition: all 0.3s ease-in;
   padding: 1.5em;
+  max-width: 375px;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 900px;
+    height: 96vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'seven one one four'
+    'seven one one four'
+    'seven one one four'
+    'seven one one four'
+    'seven two three four'
+    'eight two three four'
+    'eight two three four'
+    'eight six five five'
+    'eight six five five'
+    'eight six five five'
+    ;
+  }
+
+  .one {
+    grid-area: one;
+  }
+  .two {
+    grid-area: two;
+  }
+  .three {
+    grid-area: three;
+  }
+  .three img {
+    width: 100% !important;
+  }
+  .four {
+    grid-area: four;
+  }
+  .four img{
+    width: 140%;
+    transform: translateX(35px);
+  }
+  .five {
+    grid-area: five;
+    flex-direction: row !important;
+  }
+  .five img,
+  .five h3 {
+    width: 100% !important;
+    font-size: 20px;
+    text-align: left;
+  }
+  .six {
+    grid-area: six;
+  }
+  .seven {
+    grid-area: seven;
+  }
+  
+  .eight {
+    grid-area: eight;
+    justify-content: space-between;
+  }
+  .seven img,.eight img {
+    width: 100% !important;
+  }
 }
 
 .box {
-  /* font-size: 18px; */
+  font-size: 18px;
   border-radius: 0.4em;
-  position: relative;
   padding: 0.9em;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-img {
-  width: 100px;
-  height: auto;
-}
+
 .three,
 .eight {
   background-color: var(--Yellow-500);
@@ -65,123 +123,85 @@ img {
   background-color: var(--Purple-500);
   color: var(--White);
 }
-.one image,
-.five image {
-  height: auto;
-}
 
 .one {
-  font-weight: 400;
-  font-size: 30px;
-  grid-area: 1/2/3/4;
+  font-size: 38px;
+  line-height: 1;
   text-align: center;
 }
 
 .one img {
   width: 50%;
-  margin: 10px;
 }
 .two {
-  grid-area: 3 / 2 / 5 / 3;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-}
-
-.two h3 {
   line-height: 0.9;
+  gap: 1em;
 }
 
 .two img {
-  width: 120%;
-  position: absolute;
-  top: 20px;
-  right: -50px;
+  width: 100%;
 }
-.three {
-  grid-area: 3 / 3 / 5 / 4;
-}
+
 .three h3 {
   letter-spacing: -1px;
   line-height: 22px;
   font-size: 24px;
 }
+
 .three img {
-  position: absolute;
-  bottom: -50px;
-  width: 80%;
+  transform: translateY(30px);
 }
 
 .four {
-  position: initial;
   background-color: var(--Purple-100);
-  justify-content: space-around;
-  grid-area: 1 / 4 / 5 / 5;
-}
-.four h3 {
-  letter-spacing: -1px;
-  line-height: 19px;
-  font-size: 22px;
+  text-align: center;
 }
 
-.four .image {
-  position: relative;
-  width: 100%;
-  height: 140px;
-}
 .four img {
-  width: 146%;
-  position: absolute;
-  left: 27px;
-  top: -36px;
+  width: 100%;
+  margin: 10px auto;
 }
 
 .five {
-  grid-area: 5 / 3 / 7 / 5;
-  flex-direction: row;
-  gap: 0.5em;
+  text-align: center;
+  gap: 1.5em;
+  font-size: 26px;
+}
+.five .image {
+  display: flex;
+  justify-content: center;
 }
 .five h3 {
-  line-height: 30px;
-  font-size: 28px;
+  width: 80%;
 }
-.five img {
-  width: 46%;
+.five img,
+.eight img {
+  width: 70%;
 }
 .six {
-  grid-area: 5 / 2 / 7 / 3;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
-  line-height: 0.5;
-}
-.six h4 {
   font-size: 36px;
+  gap: 10px;
+  align-items: self-start;
+  padding: 0.3em 0.5em;
 }
+
 .six img {
-  margin: 0;
-  width: 80%;
+  width: 55%;
 }
 .seven {
   background-color: var(--Yellow-100);
-  grid-area: 1 / 1 / 4 / 2;
+  font-size: 23px;
 }
-.seven img {
-  width: 90%;
-}
+
 .eight {
-  grid-area: 4 / 1 / 7 / 2;
+  font-size: 28px;
 }
-.eight,
 .seven,
-.two {
-  letter-spacing: -1px;
-  line-height: 19px;
-  font-size: 22px;
-  display: flex;
-  justify-content: center;
-  gap: 1em;
+.eight {
+  gap: 0.5em;
+  line-height: 28px;
 }
-.eight img {
-  width: 110%;
+.three img,
+.seven img {
+  width: 60%;
 }
