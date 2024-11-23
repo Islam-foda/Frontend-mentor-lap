@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live Preview](https://islam-foda.github.io/Frontend-mentor-lap/fylo-landing-page-with-two-column-layout-master/index.html)
+- Live Site URL: [Live Preview](https://github.com/Islam-foda/Frontend-mentor-lap/blob/main/fylo-landing-page-with-two-column-layout-master/index.html)
 
 
 ## My process
