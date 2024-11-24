@@ -4,7 +4,7 @@ export default function Feature() {
     <section>
       <div className="feature">
         <div className="image">
-          <img src="../../images/illustration-1.svg" alt="illustration-1" />
+          <img src="./images/illustration-1.svg" alt="illustration-1" />
         </div>
         <div className="contents">
           <div className="content">

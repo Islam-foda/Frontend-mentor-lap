@@ -5,7 +5,7 @@ export default function Productive() {
     <section>
       <div className="productive">
         <div className="image">
-          <img src="../../images/illustration-2.svg" alt="illustration-2" />
+          <img src="./images/illustration-2.svg" alt="illustration-2" />
         </div>
         <div className="content">
           <h1>Stay productive, wherever you are</h1>
@@ -19,7 +19,7 @@ export default function Productive() {
           </p>
           <p className="green">
             <a href="#">See how Fylo works</a>
-            <img src="../../images/icon-arrow.svg" alt="icon" />
+            <img src="./images/icon-arrow.svg" alt="icon" />
           </p>
           <div className="quote">
             <FaQuoteLeft />
@@ -30,7 +30,7 @@ export default function Productive() {
             </p>
             <div className="card">
               <div className="card-image">
-                <img src="../../images/avatar-testimonial.jpg" alt="avatar" />
+                <img src="./images/avatar-testimonial.jpg" alt="avatar" />
               </div>
               <div className="card-detail">
                 <h5>Kyle Burton</h5>

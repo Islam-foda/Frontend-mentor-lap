@@ -11,11 +11,11 @@ export default function Footer() {
       <div className="footer">
         <div className="contactMe">
           <div className="mob">
-            <img src="../../images/icon-phone.svg" alt="mobile-icon" />
+            <img src="./images/icon-phone.svg" alt="mobile-icon" />
             <p>Phone: +1-543-123-4567</p>
           </div>
           <div className="email">
-            <img src="../../images/icon-email.svg" alt="mail-icon" />
+            <img src="./images/icon-email.svg" alt="mail-icon" />
             <p>example@fylo.com</p>
           </div>
         </div>
